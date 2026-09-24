@@ -1,0 +1,23 @@
+section header{
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    height: 6.6vh;
+    width: 100%;
+    position: fixed;
+    margin-right: 20px;
+}
+.nav-links-text{
+    margin-top: auto; margin-bottom: auto;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+header .nav-links-text a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+header .nav-links-text a:hover{
+    background-color: #ff6600da;
+    /* border-radius: ; */
+    color: whitesmoke
+}
