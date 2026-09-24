@@ -1,19 +1,29 @@
 import React from "react";
+import LandingPageScreen from "./Screen/LandingPageScreen";
+import { Route, Routes } from "react-router-dom";
 import Header from "./component/Header/Header";
-import Hero from "./component/Header/Hero/Hero";
-import About from "./component/Header/About/About";
-import Testimony from "./component/Header/Testimony/Testimony";
-import Cta from "./component/Header/Cta/Cta";
+import ContactUsPageScreen from "./Screen/ContactUsPageScreen";
+import ContactPageScreen from "./Screen/ContactPageScreen";
+import ServicePageScreen from "./Screen/ServicePageScreen";
+import GetStartedPageScreen from "./Screen/GetStartedPageScreen";
+
 
 
 const App = () => {
   return (
     <div>
-      <Header /> 
-      <Hero />
-      <About /> 
-      <Testimony />  
-      <Cta />   
+      <Header />
+
+     <Routes>
+      <Route path="/" element={<LandingPageScreen />} />
+      <Route path="/contact-us" element={<ContactUsPageScreen/>} />
+      <Route path="/Contact" element={<ContactPageScreen/>}/>
+      <Route path="/Service" element={<ServicePageScreen/>}/>
+      <Route path="/GetStarted" element={<GetStartedPageScreen/>}/>
+
+
+     </Routes>
+      
       
     </div>
   );
